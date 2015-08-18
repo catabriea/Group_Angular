@@ -1,0 +1,18 @@
+body {
+    background-color: lightskyblue;
+    text-align: center;
+    color: dimgray;
+}
+.jumbotron {
+    background-color: lightsteelblue;
+}
+.btn {
+    background-color: aliceblue;
+}
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="TwitterApp">
+    <head>
+        <meta charset = "UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js" type="text/javascript"></script>
+        <script src="app.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title></title>
+    </head>
+
+    <body ng-controller = 'HandleController'>
+        <div class="jumbotron">
+            <h1>Snafu Incorporated Twitter Handles</h1>
+            <input type="button" value="Generate" ng-click="ShowHide()"/>
+            <br />
+            <br />
+            <div ng-hide = "IsHidden"><div ng-repeat = 'twitters in Handle'><a href="https://twitter.com\{{twitters}}\">@{{twitters}}</a></div>
+            </div>
+
+        </div>
+
+        <h2>
+            Here at Snafu Inc. we suck at coming up with twitter handles.</br>
+            Who wants to go down in twitter history as @catwhite, when you can be @fluffyglitterkitty? </br>
+            So, try out our twitter generator!</br>
+            But make sure to click the link -someone may have beat us to the punch! </br>
+        </h2>
+
+
+    <!--{{Handle}}-->
+        <!--<div ng-repeat = 'twitters in Handle'><a href="https://twitter.com\{{twitters}}\">@{{twitters}}</a></div>-->
+        <footer>
+            &copy Snafu Inc 2015
+        </footer>
+    </body>
+</html>

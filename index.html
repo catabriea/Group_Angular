@@ -10,15 +10,15 @@
     </head>
 
     <body ng-controller = 'HandleController'>
-        <div class="jumbotron">
-            <h1>Snafu Incorporated Twitter Handles</h1>
-            <input type="button" value="Generate" ng-click="ShowHide()"/>
-            <br />
-            <br />
-            <div ng-hide = "IsHidden"><div ng-repeat = 'twitters in Handle'><a href="https://twitter.com\{{twitters}}\">@{{twitters}}</a></div>
-            </div>
-
+    <div class="jumbotron">
+        <h1>Snafu Incorporated Twitter Handles</h1>
+        <input type="button" value="Generate" ng-click="ShowHide()"/>
+        <br />
+        <br />
+        <div ng-hide = "IsHidden"><div ng-repeat = 'twitters in Handle'><a href="https://twitter.com\{{twitters}}\">@{{twitters}}</a></div>
         </div>
+
+    </div>
 
         <h2>
             Here at Snafu Inc. we suck at coming up with twitter handles.</br>
